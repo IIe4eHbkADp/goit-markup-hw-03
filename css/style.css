@@ -60,7 +60,7 @@ body {
   color: var(--logo-color);
 }
 .header-list {
-  /* display: flex; */
+  display: flex;
 }
 .header-list .header-link {
   color: var(--secondary-text-color);
@@ -75,11 +75,12 @@ body {
 
 /*-------------------------- Contacts -----------------------*/
 .header-contacts {
+  display: flex;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  /* display: flex; */
 }
 
 .header-contacts .contacts-item {
@@ -132,7 +133,9 @@ body {
 }
 
 /* ---------------------------Main section---------------------------------- */
-
+.section {
+  padding: 94px;
+}
 .hidden-title {
   width: 1px;
   height: 1px;
@@ -158,6 +161,8 @@ body {
 
 .team {
   background-color: var(--color-section);
+
+  outline: solid 1px tomato;
 }
 .team-list {
   background-color: var(--main-color);
@@ -182,6 +187,8 @@ body {
 /*----------------------------------- Footer----------------------------- */
 
 .footer {
+  padding: 60px;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: var(--bgc-second-color);
