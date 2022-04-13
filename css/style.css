@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -117,7 +117,6 @@ body {
   display: inline-block;
   border-radius: 4px;
   font-weight: 700;
-  display: flex;
   line-height: 1.87;
   align-items: center;
   text-align: center;
@@ -136,6 +135,9 @@ body {
 .section {
   padding: 94px;
 }
+.main-section {
+  outline: solid 1px tomato;
+}
 .hidden-title {
   width: 1px;
   height: 1px;
@@ -143,6 +145,7 @@ body {
   opacity: 0;
   margin: -1px;
 }
+
 .section-title {
   font-weight: 700;
   font-size: 14px;
@@ -150,11 +153,27 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+
+  outline: solid 1px tomato;
 }
+
 .section-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  outline: solid 1px tomato;
+}
+
+.section .title-section {
+  outline: solid 1px tomato;
+
+  text-align: center;
+}
+
+.section .section-image {
+  outline: solid 1px tomato;
+  margin-top: 50px;
 }
 
 /*--------------------------- Team --------------------------*/
@@ -162,6 +181,13 @@ body {
 .team {
   background-color: var(--color-section);
 
+  outline: solid 1px tomato;
+}
+.title-section {
+  outline: solid 1px tomato;
+}
+.team-list {
+  margin-top: 50px;
   outline: solid 1px tomato;
 }
 .team-list {
@@ -187,11 +213,16 @@ body {
 /*----------------------------------- Footer----------------------------- */
 
 .footer {
-  padding: 60px;
+  padding: 60px 0;
 
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: var(--bgc-second-color);
+}
+.header-logo.item {
+  /* margin-bottom: 20px; */
+
+  outline: solid 1px tomato;
 }
 .footer-logo {
   color: var(--main-color);
@@ -199,11 +230,15 @@ body {
 .adress-title {
   color: var(--main-color);
 }
+
 .footer-contacts .footer-item {
   color: var(--main-text-color);
 }
 address {
   font-style: normal;
+  margin-top: 20px;
+
+  outline: solid 1px tomato;
 }
 /*-------------------------- Porfolio filter button------------------------ */
 
