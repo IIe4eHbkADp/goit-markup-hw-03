@@ -38,6 +38,10 @@ body {
 .header {
   border-bottom: 1px solid var(--border-main-color);
 }
+.header .container {
+  display: flex;
+  align-items: center;
+}
 
 .header-navigation {
   font-weight: 500;
@@ -49,6 +53,11 @@ body {
 /* Logo+Navigation */
 
 .header-logo {
+  display: block;
+  margin-right: 93px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -62,8 +71,15 @@ body {
 .header-list {
   display: flex;
 }
+
+.header-list .header-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-list .header-link {
+  display: block;
   color: var(--secondary-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-list.header-link:focus,
 .header-link:hover {
@@ -75,6 +91,7 @@ body {
 
 /*-------------------------- Contacts -----------------------*/
 .header-contacts {
+  margin-left: auto;
   display: flex;
 
   font-weight: 500;
@@ -82,8 +99,14 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.header-contacts .contact:not(:last-child) {
+  margin-right: 50px;
+}
 
 .header-contacts .contacts-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-text-color);
 }
 .header-contacts.contacts-item:focus,
@@ -95,13 +118,15 @@ body {
 
 .main-hero {
   background-color: var(--bgc-second-color);
+
+  text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  max-width: 650px;
-  text-align: center;
   text-transform: uppercase;
   color: var(--main-color);
 }
@@ -135,9 +160,6 @@ body {
 .section {
   padding: 94px;
 }
-.main-section {
-  outline: solid 1px tomato;
-}
 .hidden-title {
   width: 1px;
   height: 1px;
@@ -147,54 +169,77 @@ body {
 }
 
 .section-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
 
-  outline: solid 1px tomato;
+.section-content {
+  display: flex;
+}
+.section-content .item {
+  width: 270px;
+}
+.section-content .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-item {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  outline: solid 1px tomato;
 }
 
-.section .title-section {
-  outline: solid 1px tomato;
+.section.img {
+  align-items: center;
+}
 
-  text-align: center;
+.section-image {
+  display: flex;
+}
+.section-image .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section .section-image {
-  outline: solid 1px tomato;
   margin-top: 50px;
 }
 
 /*--------------------------- Team --------------------------*/
 
+.team-list {
+  display: flex;
+}
 .team {
+  align-items: center;
   background-color: var(--color-section);
+}
+.team-list .item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--main-color);
+}
+.team-list .item:not(:last-child) {
+  margin-right: 30px;
+}
 
-  outline: solid 1px tomato;
-}
-.title-section {
-  outline: solid 1px tomato;
-}
 .team-list {
   margin-top: 50px;
-  outline: solid 1px tomato;
 }
-.team-list {
-  background-color: var(--main-color);
-  text-align: center;
+
+.team-list .img {
+  margin-bottom: 30px;
 }
+
 .team-title {
+  margin-bottom: 10px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -204,6 +249,7 @@ body {
   color: var(--secondary-text-color);
 }
 .team-item {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -214,15 +260,11 @@ body {
 
 .footer {
   padding: 60px 0;
-
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   background-color: var(--bgc-second-color);
 }
 .header-logo.item {
-  /* margin-bottom: 20px; */
-
-  outline: solid 1px tomato;
+  padding: 0;
+  margin-bottom: 20px;
 }
 .footer-logo {
   color: var(--main-color);
@@ -234,11 +276,15 @@ body {
 .footer-contacts .footer-item {
   color: var(--main-text-color);
 }
-address {
-  font-style: normal;
-  margin-top: 20px;
+.footer-item {
+  display: block;
+  margin-top: 9px;
+}
 
-  outline: solid 1px tomato;
+.footer-contacts {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 /*-------------------------- Porfolio filter button------------------------ */
 
